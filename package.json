@@ -1,0 +1,28 @@
+{
+  "name": "discord-slash-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate code for making slash command bots using discord.js and typescript",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node dist/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeathVenom54/discord-slash-boilerplate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeathVenom54/discord-slash-boilerplate/issues"
+  },
+  "homepage": "https://github.com/DeathVenom54/discord-slash-boilerplate#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^15.6.1",
+    "@types/node-fetch": "^2.5.10"
+  }
+}
