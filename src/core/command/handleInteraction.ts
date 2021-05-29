@@ -1,8 +1,12 @@
-import { Interaction } from './structures/Interaction.interface';
+import { Interaction } from '../structures/Interaction.interface';
 import { getCommands } from './commands';
-import InteractionClass from './classes/Interaction';
+import InteractionClass from '../classes/Interaction';
 import { markResponseAsync } from './response';
 
+/**
+ * Look for the associated command and execute it when it is triggered
+ * @param interaction The received interaction
+ */
 const handleInteraction = async (interaction: Interaction) => {
   const commands = getCommands();
   const command = commands.find(c => c.name === interaction.data?.name);

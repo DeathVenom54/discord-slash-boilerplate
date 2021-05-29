@@ -1,6 +1,6 @@
 import { WSEventType, Client } from 'discord.js';
-import handleInteraction from './core/handleInteraction';
-import setupCommands from './core/commands';
+import handleInteraction from './core/command/handleInteraction';
+import setupCommands from './core/command/commands';
 import { botToken as token, applicationId } from './config.json';
 
 const client = new Client();

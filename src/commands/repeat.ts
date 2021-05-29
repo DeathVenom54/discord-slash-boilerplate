@@ -1,6 +1,7 @@
-import Command from '../core/classes/Command';
-import { ApplicationCommandOptionType } from '../core/structures/ApplicationCommandOptionType.enum';
+import Command from 'Command';
+import { ApplicationCommandOptionType } from 'ApplicationCommandOptionType';
 
+/** A basic command using options which repeats the string inputted */
 const repeat = new Command(
   'repeat',
   'Repeats what you said',

@@ -1,8 +1,8 @@
 import fs from 'fs';
 import path from 'path';
-import Command from './classes/Command';
-import req from './req';
-import { ApplicationCommand } from './structures/ApplicationCommand.interface';
+import Command from '../classes/Command';
+import req from '../req';
+import { ApplicationCommand } from '../structures/ApplicationCommand.interface';
 
 const commands: Command[] = [];
 

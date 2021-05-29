@@ -4,12 +4,13 @@ import { InteractionType } from '../structures/InteractionType.enum';
 import { ApplicationCommandInteractionData } from '../structures/ApplicationCommandInteractionData.interface';
 import { GuildMember } from '../structures/GuildMember.interface';
 import { User } from '../structures/User.interface';
-import { sendAsyncResponse, sendResponse } from '../response';
+import { sendAsyncResponse, sendResponse } from '../command/response';
 import { MessageEmbed } from 'discord.js';
 import {ApplicationCommandInteractionDataOption} from "../structures/ApplicationCommandInteractionDataOption.interface";
 
 let isAsync: boolean;
 
+/** Class representing the interaction sent when a slash command is triggered */
 class Interaction {
   readonly id: snowflake;
   readonly application_id: snowflake;
@@ -21,7 +22,7 @@ class Interaction {
   readonly channel_id?: snowflake;
   readonly member?: GuildMember;
   readonly user?: User;
-  private token: string;
+  private readonly token: string;
   readonly version: number;
 
   constructor(interaction: RawInteraction, async: boolean) {

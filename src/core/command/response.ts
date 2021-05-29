@@ -1,8 +1,8 @@
-import { snowflake } from './structures/snowflake.type';
-import { InteractionResponseCallbackData } from './structures/InteractionResponseCallbackData.interface';
-import req from './req';
-import { InteractionResponseType } from './structures/InteractionResponseType.enum';
-import {applicationId} from '../config.json';
+import { snowflake } from '../structures/snowflake.type';
+import { InteractionResponseCallbackData } from '../structures/InteractionResponseCallbackData.interface';
+import req from '../req';
+import { InteractionResponseType } from '../structures/InteractionResponseType.enum';
+import {applicationId} from '../../config.json';
 
 /**
  * Mark a response as async and show a loading state until the Promise is resolved
