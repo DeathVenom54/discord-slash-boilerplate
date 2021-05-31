@@ -11,10 +11,6 @@
     "skipLibCheck": true,                     /* Skip type checking of declaration files. */
     "forceConsistentCasingInFileNames": true,  /* Disallow inconsistently-cased references to the same file. */
     "resolveJsonModule": true,
-    "baseUrl": "./src",
-    "paths": {
-      "Command": ["core/classes/Command"],
-      "ApplicationCommandOptionType": ["core/structures/ApplicationCommandOptionType.enum"]
-    }
+    "baseUrl": "./src"
   }, "include": ["src"]
 }

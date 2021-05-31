@@ -1,5 +1,5 @@
 import fetch from 'node-fetch';
-import { botToken } from '../config.json';
+import { botToken } from '../../config.json';
 
 const urlPrefix = 'https://discord.com/api/v8';
 const headers = { Authorization: `Bot ${botToken}` };

@@ -1,6 +1,6 @@
 import { snowflake } from '../structures/snowflake.type';
 import { InteractionResponseCallbackData } from '../structures/InteractionResponseCallbackData.interface';
-import req from '../req';
+import req from '../utils/req';
 import { InteractionResponseType } from '../structures/InteractionResponseType.enum';
 import {applicationId} from '../../config.json';
 
