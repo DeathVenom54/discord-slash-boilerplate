@@ -1,6 +1,6 @@
-import { snowflake } from '../../structures/snowflake.type';
-import req from '../../utils/req';
-import { applicationId } from '../../../config.json';
+import { snowflake } from "../../structures/api/snowflake.type";
+import req from "../../utils/req";
+import { applicationId } from "../../../config.json";
 
 /**
  * Removes a Global Command or Guild Command of a specific Guild
@@ -11,13 +11,13 @@ export default async function RemoveApplicationCommand(
   commandId: snowflake,
   guildId?: string
 ): Promise<void> {
-  if (guildId === null) {
-    return await req.DELETE(
-      `/applications/${applicationId}/commands/${commandId}`
-    );
-  } else {
+  if (guildId) {
     return await req.DELETE(
       `/applications/${applicationId}/guilds/${guildId}/commands/${commandId}`
     );
   }
+
+  return await req.DELETE(
+    `/applications/${applicationId}/commands/${commandId}`
+  );
 }

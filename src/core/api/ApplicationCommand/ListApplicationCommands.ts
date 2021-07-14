@@ -1,5 +1,5 @@
-import { ApplicationCommand } from '../../structures/ApplicationCommand.interface';
-import { snowflake } from '../../structures/snowflake.type';
+import { ApplicationCommand } from '../../structures/api/ApplicationCommand.interface';
+import { snowflake } from '../../structures/api/snowflake.type';
 import { applicationId } from '../../../config.json';
 import req from '../../utils/req';
 

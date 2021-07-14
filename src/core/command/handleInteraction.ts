@@ -1,4 +1,4 @@
-import { Interaction } from '../structures/Interaction.interface';
+import { Interaction } from '../structures/api/Interaction.interface';
 import { getCommands } from './commands';
 import InteractionClass from '../classes/Interaction';
 import { markResponseAsync } from './response';

@@ -1,7 +1,7 @@
-import { snowflake } from '../structures/snowflake.type';
-import { InteractionResponseCallbackData } from '../structures/InteractionResponseCallbackData.interface';
+import { snowflake } from '../structures/api/snowflake.type';
+import { InteractionResponseCallbackData } from '../structures/api/InteractionResponseCallbackData.interface';
 import req from '../utils/req';
-import { InteractionResponseType } from '../structures/InteractionResponseType.enum';
+import { InteractionResponseType } from '../structures/api/InteractionResponseType.enum';
 import {applicationId} from '../../config.json';
 
 /**

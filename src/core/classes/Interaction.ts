@@ -1,12 +1,12 @@
-import { Interaction as RawInteraction } from '../structures/Interaction.interface';
-import { snowflake } from '../structures/snowflake.type';
-import { InteractionType } from '../structures/InteractionType.enum';
-import { ApplicationCommandInteractionData } from '../structures/ApplicationCommandInteractionData.interface';
-import { GuildMember } from '../structures/GuildMember.interface';
-import { User } from '../structures/User.interface';
+import { Interaction as RawInteraction } from '../structures/api/Interaction.interface';
+import { snowflake } from '../structures/api/snowflake.type';
+import { InteractionType } from '../structures/api/InteractionType.enum';
+import { ApplicationCommandInteractionData } from '../structures/api/ApplicationCommandInteractionData.interface';
+import { GuildMember } from '../structures/api/GuildMember.interface';
+import { User } from '../structures/api/User.interface';
 import { sendAsyncResponse, sendResponse } from '../command/response';
 import { MessageEmbed } from 'discord.js';
-import {ApplicationCommandInteractionDataOption} from "../structures/ApplicationCommandInteractionDataOption.interface";
+import {ApplicationCommandInteractionDataOption} from "../structures/api/ApplicationCommandInteractionDataOption.interface";
 
 let isAsync: boolean;
 
